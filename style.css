@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'fortnite'; /* Name your font family */
+    src: url('Fortnite.ttf'); /* Correct the path to your font file */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background: linear-gradient(#43a4f1, #193dad);*/
+    background-color: #0c0d10 !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+* {
+    font-family: 'fortnite', sans-serif; /* Use the font family */
+    color: white;
+    font-weight: normal;
+}
+
+.item-shop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-image: url("media/store-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Standard syntax */
+}
+
+.item-shop-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-shop-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1010px;
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0.467);
+    transform: translateY(-100px);
+    color: white;
+    font-family: "Roboto";
+}
+
+.item-shop-note b {
+    font-family: "Roboto";
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+.rpurple {
+    background: linear-gradient(to right, #602f98, #b35be2, #602f98) !important;
+    border: #a05eb9 solid 4px !important;
+}
+
+.rgreen {
+    background: linear-gradient(to right, #25651d, #59a237, #25651d) !important;
+    border: #88cf5c solid 4px !important;
+}
+
+.rgreen:hover {
+    background: linear-gradient(to right, #25651d, #80a464, #25651d) !important;
+}
+
+.item:hover .rgreen {
+    background: linear-gradient(to right, #25651d, #97ff67, #25651d) !important;
+}
+
+.rpurple:hover {
+    background: linear-gradient(to right, #602f98, #c088e0, #602f98) !important;
+}
+
+
+.rnpurple {
+    font-size: 40px !important;
+    background: linear-gradient(to bottom, white, #fbdcfd) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+}
+
+.rngreen {
+    font-size: 40px !important;
+    background: linear-gradient(to bottom, white, #87bb85) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+}
+
+.item-picaxe {
+    width: fit-content;
+    height: 650px;
+}
+
+.item-price {
+    width: 100%;
+    font-family: "Roboto", serif;
+    font-weight: bolder;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    background-color: #080424;
+    height: 70px;
+    position: relative; /* Add relative positioning for z-index to work */
+    z-index: 4; /* Ensure it stacks above .item-img */
+}
+
+.item-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120px;
+    background-color: #18345a72;
+    position: relative;
+    z-index: 2; /* Below .item-img */
+
+}
+
+.item-name {
+    font-size: 40px;
+    background: linear-gradient(to bottom, white, #d3f6fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 0;
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.item-season-level {
+    font-family: "Roboto";
+    font-weight: bolder;
+    position: absolute;
+    font-size: 18px !important;
+    bottom: 0;
+
+    opacity: 0.8;
+
+    background: linear-gradient(to bottom, white, #d3f6fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.item-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-img {
+    text-align: center;
+    transform: translateY(130px);
+    position: relative;
+    z-index: 3; /* Above .item-name but below .item-price */
+}
+
+
+.item-img-small {
+    transform: scale(0.7) translateY(280px) !important;
+}
+
+.item:hover .item-img-small {
+    transform: scale(0.7) translateY(265px) !important;
+}
+
+.item-img-small-skin {
+    transform: scale(0.65) translateY(580px) !important;
+}
+
+.item:hover .item-img-small-skin {
+    transform: scale(0.65) translateY(565px) !important;
+}
+
+.items {
+    transform: scale(0.70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.items-colum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items-colum .item {
+    height: 401px !important;
+}
+
+.item {
+    position: relative;
+    width: 430px !important;
+    min-width: 430px;
+    max-width: 430px;
+    height: 830px;
+    background: linear-gradient(to right, #17417e, #3791d7, #17417e);
+    border: #56a3d1 solid 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.18s ease-in-out;
+}
+
+.item:hover {
+    outline: solid #f3db23; /* Add 'solid' as the outline-style */
+    outline-width: 8px; /* Outline width remains as specified */
+    background: linear-gradient(to right, #17417e, #68acdc, #17417e);
+}
+
+.item:hover .item-img {
+    transform: translateY(120px);
+}
+
+
+.item-img {
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.item-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 100000;
+}
+
